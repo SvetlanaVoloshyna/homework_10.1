@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.bg-body{
+    background-color: #b07cf7;
+}
+.container{
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+}
+.title{
+    margin-bottom: 30px;
+    font-family: Raleway;
+    font-size: 90px;
+    font-weight: 700;
+    transition: all 0.5s ease-in-out;
+    /* line-height: 25px; */
+    
+}
+.title:hover{
+    /* transform: skewX(15deg);  */
+    transform: rotateZ(360deg);
+    transition: all 0.5s ease-in-out;  
+    color: #f72b3b; 
+}
+.header-text{
+    width: 560px;
+    text-align: center;
+    margin-bottom: 47px;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+}
+section{
+    width: 370px;
+    height: 310px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 20px;
+    transition: all 0.5s ease-in-out;
+}
+section:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    transform: scale(0.9); 
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+section:hover>.date{
+    transform: scale(1.5);  
+    background-color: white;
+    opacity: 0.5;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+.bg-img{
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: #fbfbf7; 
+}
+.green-smoothies{
+    background-image: url(../img/green_smoothies_1.png);
+}
+.growing-food{
+    background-image: url(../img/growing_food_2.png);
+} 
+.pesticides-food{
+    background-image: url(../img/pesticides_food_3.png);
+}
+.date{
+    width: 60px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #262626;
+    opacity: 0.5;
+    position: absolute;
+    left: 30px;
+    top:30px;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out; 
+}
+.day{
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.month{
+    font-family: Raleway;
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.main-text{
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.public-time{
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+button{
+    border: none;
+    width: 200px;
+    height: 55px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #f72b3b;
+    transition: all 0.5s ease-in-out;
+}
+.button-text{
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+button:hover{
+    transform: scale(1.2) ;
+    background-color: white;
+    box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+button:hover>.button-text{
+    color: black;
+}
